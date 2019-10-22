@@ -22,3 +22,6 @@ yarn-error.log*
 
 # vscode local history plugin
 .history
+
+# agreed-ui build
+./build
