@@ -1,7 +1,8 @@
 <template>
   <div class="ApiTest">
     <h1>{{ msg }}</h1>
-    <button @click="request">aaaa</button>
+    <button @click="fetchGithub">fetchGithub</button>
+    <button @click="fetchAgreed">fetchAgreed</button>
     <ul>
       <li v-for="(v, index) in items" :key="v.id">
         <a :href="v.html_url" target="_blank">
@@ -15,21 +16,21 @@
 </template>
 
 <script>
-import axios from "axios";
+import { axios } from "../main";
 export default {
   name: "ApiTest",
   props: {
     msg: String
   },
-  data: function () {
+  data: function() {
     return {
       items: [],
       res: {},
       err: {}
-    }
+    };
   },
   methods: {
-    request() {
+    fetchGithub() {
       const successUrl = "https://api.github.com/search/repositories";
       axios
         .get(successUrl, {
@@ -40,12 +41,28 @@ export default {
             type: "Repositories"
           }
         })
-        .then(({data}) => {
-          this.items = data.items
-          this.res = data
+        .then(({ data }) => {
+          this.items = data.items;
+          this.res = data;
         })
         .catch(err => {
-          this.err = err
+          this.err = err;
+        });
+    },
+    fetchAgreed() {
+      const url = "http://localhost:21000/user/aaa";
+      axios
+        .get(url, {
+          params: {
+            q: "1",
+            index: "2222"
+          }
+        })
+        .then(({ data }) => {
+          this.res = data;
+        })
+        .catch(err => {
+          this.err = err;
         });
     }
   }
