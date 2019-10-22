@@ -1,5 +1,7 @@
 # vue-agreed
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wilf312/vue-agreed.svg)](https://greenkeeper.io/)
+
 ## Project setup
 ```
 yarn install
