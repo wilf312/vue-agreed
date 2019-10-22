@@ -24,4 +24,4 @@ yarn-error.log*
 .history
 
 # agreed-ui build
-./build
+build
