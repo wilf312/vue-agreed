@@ -2439,7 +2439,12 @@ core-js-pure@^3.0.0:
   resolved "https://registry.npm.taobao.org/core-js-pure/download/core-js-pure-3.3.3.tgz?cache=0&sync_timestamp=1571677402505&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js-pure%2Fdownload%2Fcore-js-pure-3.3.3.tgz#c6a796e371782394ffb60d82ff67e0e073070093"
   integrity sha1-xqeW43F4I5T/tg2C/2fg4HMHAJM=
 
-core-js@3.3.3, core-js@^3.1.2:
+core-js@3.6.5:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
+  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
+
+core-js@^3.1.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.3.3.tgz#b7048d3c6c1a52b5fe55a729c1d4ccdffe0891bb"
   integrity sha512-0xmD4vUJRY8nfLyV9zcpC17FtSie5STXzw+HyYw2t8IIvmDnbq7RJUULECCo+NstpJtwK9kx8S+898iyqgeUow==
